@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Шрифты */
+
+@font-face {
+    font-family: Merriweather;
+    src: url(fonts/Merriweather-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+
+/* Заголовки */
+
+h1, h2, h3 {
+    font-family: Merriweather;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: "Open Sans";
+    text-align: justify;
+    margin: 10px 0px;
+    text-indent: 20px;
+    line-height: 1.5
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+figcaption {
+    font-size: smaller;
+    text-align: center;
+}
+
+/* Структура */
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color:#015958;
+}
+
+nav ul {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav li {
+    display: inline-block;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+}
+
+nav li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #8F3400;
+    text-decoration: none;
+}
+
+
+body {
+    color: #023535;
+}
+
+#jumbotron {
+    text-align: center;
+    color: whitesmoke;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 50px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    background-color: #023535;
+}
+
+/* Цветные div'ы */
+
+#colours {
+    text-align: center;
+    border: 1px solid #008F8C;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    max-width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    padding: 20px 50px;
+}
+
+.colour-box {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    color: white;
+    margin: 5px;
+}
+
+.colour-box p {
+    text-align: center;
+    text-indent: 0px;
+    line-height: 1;
+}
+
+.darkest-blue {
+    background-color: #023535;
+}
+
+.darker-blue {
+    background-color: #015958;
+}
+
+.blue {
+    background-color: #008F8C;
+}
+
+.lighter-blue {
+    background-color: #0CABA8;
+}
+
+.lightest-blue {
+    background-color: #0FC2C0;
+}
+
+.contrast {
+    background-color: #8F3400;
+}
+
+/* Секция шрифтов */
+
+#fonts {
+    text-align: center;
+    border: 1px solid #008F8C;
+    background-color: #008F8C;
+    color: white;
+    padding: 10px;}
+    
+#fonts-flexbox 
+    {
+        display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) 
+{
+    #fonts-flexbox 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.OpenSans h3,
+.OpenSans p,
+.OpenSans li {
+    font-family: "Open Sans";
+}
+
+.Merriweather h3,
+.Merriweather p,
+.Merriweather li {
+    font-family: Merriweather;
+}
+
+.Merriweather, .OpenSans {
+    text-align: left;
+    display: inline-block;
+}
+
+.Merriweather p, .OpenSans p {
+text-indent: 0px;
+}
+
+
+/* Секция типографии */
+
+#typography {
+    background-color: #FFFFFF;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+#typography ul {
+    margin-bottom: 1em;
+}
+
+#typography-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#typography h2 {
+    margin-bottom: 30px;
+}
+
+#headings,  #paragraph {
+    display: inline-block;
+    max-width: 50%;
+    vertical-align:top;
+    text-align:justify;
+    padding: 0 5%;
+}
+
+
+@media only screen and (max-width: 700px) 
+{
+#typography-flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    #headings, #paragraph {
+    width: 90%;
+    padding: 0 2%;
+
+    }
+
+    #headings li, #paragraph li 
+    {
+margin-left: 5%;
+    }
+
+    }
+
+/* Кнопки */
+
+.buttons {
+    display: block;
+    margin: 0 auto;
+}
+
+.button-first a {
+    background-color: #0FC2C0;
+    color: white;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    padding: 5px 30px;
+    font-size: x-large;
+    border:1px solid #023535;
+    border-radius: 10px;
+    width: fit-content;
+    display: block;
+    margin: 10px auto;
+
+}
+
+.button-first a {
+text-decoration: none;
+}
+
+/* Пример текста */
+
+#example-background {
+    width: 100%;
+    background-image: url("https://cdn.nur.kz/images/1120/1036812015e8a0e2.jpeg");
+    background-size:cover;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    #example-background {
+        background-image: none;
+    }
+}
+
+#example {
+    max-width: 1200px;
+    max-height: 1000px;
+    margin: 20px auto 0px;
+    background-color: white;
+    padding: 20px 20px;
+    overflow: scroll;
+}
+
+#example h1, #example h2 {
+    background-color: #008F8C;
+    color: whitesmoke;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;   
+}
+
+#example img 
+ {
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 600px) 
+{
+    #example img 
+    {
+        width: 100%;
+    }
+}
+
+/* Футер */
+
+footer {
+    text-align: center;
+    width: 100%;
+    background-color: #023535;
+    color:white;
+    padding: 1em 0%;
+}
